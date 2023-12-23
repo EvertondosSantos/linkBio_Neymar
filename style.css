@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+}
+
+.banner{
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+figure .neymar-perfil{
+    background: linear-gradient(90deg,#ffdf00, #009c3d);
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption{
+position: relative;
+margin: 10px;
+}
+
+figcaption h1{
+    font-size: 30px;
+    line-height: 60px;
+    text-shadow: 1px 3px 1px #000000;
+}
+figcaption .borda{
+    background: linear-gradient(90deg,#ffdf00, #009c3d);
+    width: 35px;
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 13px;
+    left: 2px;
+}
+figcaption h1::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("assets/verificado.png");
+    background-size: cover;
+    position: absolute;
+    top: calc(45%);
+}
+
+.redes{
+    width: calc(100%/2.5);
+    /* border: 1px red solid; */
+    min-width: 276px;
+}
+.redes ul{
+    list-style: none;
+    text-align: center;
+}
+.redes ul li{
+    background-color: #0200006e;
+    margin: 10px 0px;
+    border-radius: 20px;
+    position: relative;
+    border: #000000 1px solid;
+}
+.redes ul li:hover{
+    /* background-color: #2e27276e; */
+    background: linear-gradient(90deg,#ffdf00, #009c3d);
+    border: #000000 1px solid;
+}
+
+.redes ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 38px;
+    /* border: #000000 solid; */
+    /* width: 100%; */
+    display: block;
+}
+
+
+.redes .youtube::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/youtube.png");
+    background-size: cover;
+    position: absolute;
+    left: 8px;
+    top: calc((38px / 2) - 12.5px);
+}
+
+.redes .instagram::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/instagram.png");
+    background-size: cover;
+    position: absolute;
+    left: 8px;
+    top: calc((38px / 2) - 12.5px);
+}
+
+.redes .twitter::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/twitter.png");
+    background-size: cover;
+    position: absolute;
+    left: 8px;
+    top: calc((38px / 2) - 12.5px);
+}
+
+.redes .facebook::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/facebook.png");
+    background-size: cover;
+    position: absolute;
+    left: 8px;
+    top: calc((38px / 2) - 12.5px);
+}
+
+.redes .twich::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/twitch.png");
+    background-size: cover;
+    position: absolute;
+    left: 8px;
+    top: calc((38px / 2) - 12.5px);
+}
+
+
+.estatisticas{
+    background-image: url("assets/imagem-de-fundo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.estatisticas h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 3px 1px #000000;
+}
+
+.estatisticas table th, .estatisticas table td{
+    padding: 15px;
+}
+
+.estatisticas tbody tr:nth-of-type(odd){
+    background-color: #fff;
+    color: #000000;
+}
+.estatisticas tbody tr:nth-of-type(even), .estatisticas thead{
+    background-color: #000000cc;
+    color: #fff;
+}
+
+.estatisticas .tabela-estatisticas img{
+    width: 30px;
+}
+
+.estatisticas thead{
+    text-align: center;
+    font-weight: bold;
+}
+.estatisticas tbody th:first-child{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.content-table{
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+
+
+
+
